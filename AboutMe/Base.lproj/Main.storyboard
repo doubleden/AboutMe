@@ -98,10 +98,10 @@
             </objects>
             <point key="canvasLocation" x="64.885496183206101" y="-2.1126760563380285"/>
         </scene>
-        <!--User View Controller-->
+        <!--Welcome View Controller-->
         <scene sceneID="Xl3-4C-7zP">
             <objects>
-                <viewController id="PXC-lf-ufx" customClass="UserViewController" customModule="AboutMe" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="PXC-lf-ufx" customClass="WelcomeViewController" customModule="AboutMe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7qe-Yy-yMs">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -113,17 +113,17 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tij-Wq-1kv">
-                                <rect key="frame" x="157" y="742.66666666666663" width="79" height="32"/>
+                                <rect key="frame" x="153.33333333333334" y="740.33333333333337" width="86.666666666666657" height="34.333333333333371"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Log Out">
-                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleSubhead"/>
+                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleHeadline"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <segue destination="jfG-Zx-MRm" kind="unwind" unwindAction="unwindFor:" id="NnU-8E-6eA"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lexPic" translatesAutoresizingMaskIntoConstraints="NO" id="Hwj-PP-pnE">
-                                <rect key="frame" x="116.6666666666667" y="340.66666666666669" width="160" height="171"/>
+                                <rect key="frame" x="116.66666666666669" y="340.66666666666669" width="160" height="171"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ITA-PX-Yt3"/>

@@ -24,22 +24,24 @@ final class LoginViewController: UIViewController {
         withIdentifier identifier: String,
         sender: Any?
     ) -> Bool {
-        guard loginTextField.text?.lowercased() == login, 
-                passwordTextField.text == password else {
+        let correctLogin = loginTextField.text?.lowercased() == login
+        let correctPassword = passwordTextField.text == password
+        
+        guard correctLogin, correctPassword else {
             showAlert(
-                withTitle: "Invalid login or password ",
+                withTitle: "Invalid login or password",
                 andMessage: "Please, enter correct login and password"
             )
             return false
         }
+        
         return true
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let userCV = segue.destination as? UserViewController
+        let userCV = segue.destination as? WelcomeViewController
         userCV?.userName = loginTextField.text
     }
-    
     
     @IBAction func unwind(for segue: UIStoryboardSegue) {
         loginTextField.text = ""
