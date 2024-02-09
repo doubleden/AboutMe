@@ -85,8 +85,53 @@
             </objects>
             <point key="canvasLocation" x="64.885496183206101" y="-2.1126760563380285"/>
         </scene>
+        <!--User View Controller-->
+        <scene sceneID="Xl3-4C-7zP">
+            <objects>
+                <viewController id="PXC-lf-ufx" customClass="UserViewController" customModule="AboutMe" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7qe-Yy-yMs">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WTH-8m-16e">
+                                <rect key="frame" x="16" y="202.66666666666666" width="361" height="40.666666666666657"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <color key="textColor" red="0.56470588235294117" green="0.39215686274509803" blue="0.23137254901960785" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tij-Wq-1kv">
+                                <rect key="frame" x="157.33333333333334" y="739.66666666666663" width="78.666666666666657" height="32"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Log Out">
+                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleSubhead"/>
+                                </buttonConfiguration>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lexPic" translatesAutoresizingMaskIntoConstraints="NO" id="Hwj-PP-pnE">
+                                <rect key="frame" x="116.66666666666669" y="340.66666666666669" width="160" height="171"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ITA-PX-Yt3"/>
+                        <color key="backgroundColor" red="0.84705882352941175" green="0.75686274509803919" blue="0.59607843137254901" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Hwj-PP-pnE" firstAttribute="centerY" secondItem="7qe-Yy-yMs" secondAttribute="centerY" id="2No-El-DP7"/>
+                            <constraint firstItem="Hwj-PP-pnE" firstAttribute="top" secondItem="WTH-8m-16e" secondAttribute="bottom" multiplier="1.4" id="Fzj-77-Dbk"/>
+                            <constraint firstItem="Hwj-PP-pnE" firstAttribute="height" secondItem="7qe-Yy-yMs" secondAttribute="height" multiplier="0.200704" id="ITq-eK-2gP"/>
+                            <constraint firstItem="ITA-PX-Yt3" firstAttribute="bottom" secondItem="Tij-Wq-1kv" secondAttribute="bottom" multiplier="1.06" id="J4f-8j-LM6"/>
+                            <constraint firstItem="Hwj-PP-pnE" firstAttribute="width" secondItem="7qe-Yy-yMs" secondAttribute="width" multiplier="0.407125" id="bzO-lV-oEG"/>
+                            <constraint firstItem="WTH-8m-16e" firstAttribute="leading" secondItem="ITA-PX-Yt3" secondAttribute="leading" constant="16" id="vca-hN-aJf"/>
+                            <constraint firstItem="Hwj-PP-pnE" firstAttribute="centerX" secondItem="7qe-Yy-yMs" secondAttribute="centerX" id="wyH-Go-lTp"/>
+                            <constraint firstItem="ITA-PX-Yt3" firstAttribute="trailing" secondItem="WTH-8m-16e" secondAttribute="trailing" constant="16" id="zdo-0e-xS0"/>
+                            <constraint firstItem="Tij-Wq-1kv" firstAttribute="centerX" secondItem="7qe-Yy-yMs" secondAttribute="centerX" id="zhk-To-oag"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3QM-QI-GMn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="836" y="-2"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="lexPic" width="626" height="984"/>
         <image name="person.circle" catalog="system" width="128" height="123"/>
         <systemColor name="tertiarySystemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
