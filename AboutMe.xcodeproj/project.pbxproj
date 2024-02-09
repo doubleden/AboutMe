@@ -299,6 +299,7 @@
 				DEVELOPMENT_TEAM = AM64M5A8BU;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AboutMe/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "About Me";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -331,6 +332,7 @@
 				DEVELOPMENT_TEAM = AM64M5A8BU;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AboutMe/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "About Me";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
