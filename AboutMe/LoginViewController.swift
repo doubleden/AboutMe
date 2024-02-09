@@ -46,10 +46,27 @@ final class LoginViewController: UIViewController {
         passwordTextField.text = ""
     }
     
+    @IBAction func forgotUserNameAction() {
+        showAlert(
+            withTitle: "Correct login is user 😉",
+            andMessage: "Try Again!"
+        )
+    }
+    
+    @IBAction func forgotPasswordAction() {
+        showAlert(
+            withTitle: "Correct password is 1111 🙈",
+            andMessage: "Try Again!"
+        )
+    }
+    
     private func showAlert(withTitle tittle: String, andMessage message: String) {
-        let alert = UIAlertController(title: tittle, message: message, preferredStyle: .alert)
+        let alert = UIAlertController(
+            title: tittle,
+            message: message,
+            preferredStyle: .alert
+        )
         let okButton = UIAlertAction(title: "Ok", style: .default) { _ in
-            self.loginTextField.text = ""
             self.passwordTextField.text = ""
         }
         
