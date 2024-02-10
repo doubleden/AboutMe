@@ -9,11 +9,11 @@ import UIKit
 
 final class LoginViewController: UIViewController {
 
-    @IBOutlet var loginTextField: UITextField!
+    @IBOutlet var userTextField: UITextField!
     @IBOutlet var passwordTextField: UITextField!
     
-    private let login = "user"
-    private let password = "1111"
+    private let validUsername = "User"
+    private let validPassword = "1111"
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super .touchesBegan(touches, with: event)
@@ -24,10 +24,8 @@ final class LoginViewController: UIViewController {
         withIdentifier identifier: String,
         sender: Any?
     ) -> Bool {
-        let correctLogin = loginTextField.text?.lowercased() == login
-        let correctPassword = passwordTextField.text == password
-        
-        guard correctLogin, correctPassword else {
+        guard userTextField.text == validUsername
+                , passwordTextField.text == validPassword else {
             showAlert(
                 withTitle: "Invalid login or password",
                 andMessage: "Please, enter correct login and password"
@@ -39,23 +37,23 @@ final class LoginViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let userCV = segue.destination as? WelcomeViewController
-        userCV?.userName = loginTextField.text
+        let welcomeCV = segue.destination as? WelcomeViewController
+        welcomeCV?.username = userTextField.text
     }
     
     @IBAction func unwind(for segue: UIStoryboardSegue) {
-        loginTextField.text = ""
+        userTextField.text = ""
         passwordTextField.text = ""
     }
     
-    @IBAction func forgotUserNameAction() {
+    @IBAction func forgotUsernameButtonTapped() {
         showAlert(
             withTitle: "Correct login is user 😉",
             andMessage: "Try Again!"
         )
     }
     
-    @IBAction func forgotPasswordAction() {
+    @IBAction func forgotPasswordButtonTapped() {
         showAlert(
             withTitle: "Correct password is 1111 🙈",
             andMessage: "Try Again!"

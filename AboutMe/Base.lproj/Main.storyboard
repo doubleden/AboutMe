@@ -22,7 +22,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="cJY-Qm-7C7">
                                         <rect key="frame" x="0.0" y="0.0" width="353" height="142.33333333333334"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Login" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="acC-Sj-SVM">
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="acC-Sj-SVM">
                                                 <rect key="frame" x="0.0" y="0.0" width="353" height="34"/>
                                                 <color key="backgroundColor" systemColor="tertiarySystemBackgroundColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -49,13 +49,13 @@
                                         <rect key="frame" x="0.0" y="157.33333333333331" width="353" height="32"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Py-ls-e60">
-                                                <rect key="frame" x="0.0" y="0.0" width="157" height="32"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="150.66666666666666" height="32"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="Forgot User Name?">
+                                                <buttonConfiguration key="configuration" style="plain" title="Forgot Username?">
                                                     <fontDescription key="titleFontDescription" style="UICTFontTextStyleSubhead"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="forgotUserNameAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Dh-QO-Fcc"/>
+                                                    <action selector="forgotUsernameButtonTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="mcY-4K-wk0"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MIf-0D-KKo">
@@ -65,7 +65,7 @@
                                                     <fontDescription key="titleFontDescription" style="UICTFontTextStyleSubhead"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="forgotPasswordAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="4kJ-My-tZm"/>
+                                                    <action selector="forgotPasswordButtonTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="L8J-Yf-Ptx"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -90,8 +90,8 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="loginTextField" destination="acC-Sj-SVM" id="tlQ-gk-xep"/>
                         <outlet property="passwordTextField" destination="7B9-Ca-PLv" id="V6X-ha-0MX"/>
+                        <outlet property="userTextField" destination="acC-Sj-SVM" id="tlQ-gk-xep"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
