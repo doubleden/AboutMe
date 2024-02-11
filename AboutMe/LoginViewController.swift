@@ -48,7 +48,7 @@ final class LoginViewController: UIViewController {
     
     @IBAction func forgotUsernameButtonTapped() {
         showAlert(
-            withTitle: "Correct login is user 😉",
+            withTitle: "Correct login is User 😉",
             andMessage: "Try Again!"
         )
     }
