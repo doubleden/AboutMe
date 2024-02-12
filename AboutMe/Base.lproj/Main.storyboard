@@ -55,17 +55,17 @@
                                                     <fontDescription key="titleFontDescription" style="UICTFontTextStyleSubhead"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="forgotUsernameButtonTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="mcY-4K-wk0"/>
+                                                    <action selector="forgotButtonsAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cpE-sd-hro"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MIf-0D-KKo">
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MIf-0D-KKo">
                                                 <rect key="frame" x="202.66666666666663" y="0.0" width="150.33333333333337" height="32"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Forgot Password? ">
                                                     <fontDescription key="titleFontDescription" style="UICTFontTextStyleSubhead"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="forgotPasswordButtonTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="L8J-Yf-Ptx"/>
+                                                    <action selector="forgotButtonsAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wLh-Mo-zpu"/>
                                                 </connections>
                                             </button>
                                         </subviews>

@@ -46,18 +46,10 @@ final class LoginViewController: UIViewController {
         passwordTextField.text = ""
     }
     
-    @IBAction func forgotUsernameButtonTapped() {
-        showAlert(
-            withTitle: "Correct login is User 😉",
-            andMessage: "Try Again!"
-        )
-    }
-    
-    @IBAction func forgotPasswordButtonTapped() {
-        showAlert(
-            withTitle: "Correct password is 1111 🙈",
-            andMessage: "Try Again!"
-        )
+    @IBAction func forgotButtonsAction(_ sender: UIButton) {
+        sender.tag == 0
+        ? showAlert(withTitle: "Correct login is User 😉",andMessage: "Try Again!")
+        : showAlert(withTitle: "Correct password is 1111 🙈",andMessage: "Try Again!")
     }
     
     private func showAlert(withTitle tittle: String, andMessage message: String) {
