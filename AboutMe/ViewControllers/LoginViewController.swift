@@ -8,12 +8,11 @@
 import UIKit
 
 final class LoginViewController: UIViewController {
-
+    
+    private let user = User(username: "User", password: "1111")
+    
     @IBOutlet var userTextField: UITextField!
     @IBOutlet var passwordTextField: UITextField!
-    
-    private let validUsername = "User"
-    private let validPassword = "1111"
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super .touchesBegan(touches, with: event)
@@ -24,8 +23,8 @@ final class LoginViewController: UIViewController {
         withIdentifier identifier: String,
         sender: Any?
     ) -> Bool {
-        guard userTextField.text == validUsername
-                , passwordTextField.text == validPassword else {
+        guard userTextField.text == user.username
+                , passwordTextField.text == user.password else {
             showAlert(
                 withTitle: "Invalid login or password",
                 andMessage: "Please, enter correct login and password") {
@@ -73,3 +72,8 @@ final class LoginViewController: UIViewController {
     }
 }
 
+extension UIViewController {
+    func makeCircle(for rectangle: UIView) {
+        rectangle.layer.cornerRadius = rectangle.frame.width / 2
+    }
+}

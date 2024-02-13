@@ -10,11 +10,14 @@ import UIKit
 final class WelcomeViewController: UIViewController {
 
     @IBOutlet var welcomeLabel: UILabel!
+    @IBOutlet var rectangleView: UIView!
+    @IBOutlet var lexusImage: UIImageView!
     
     var username: String!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func viewDidLayoutSubviews() {
+        makeCircle(for: rectangleView)
+        view.insertSubview(lexusImage, aboveSubview: rectangleView)
         welcomeLabel.text = "Welcome, \(username ?? "") !"
     }
 }
