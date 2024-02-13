@@ -34,13 +34,14 @@ final class LoginViewController: UIViewController {
                 }
             return false
         }
-        
         return true
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let welcomeCV = segue.destination as? WelcomeViewController
-        welcomeCV?.username = userTextField.text
+        let tabBarVC = segue.destination as? UITabBarController
+        if let welcomeVC = tabBarVC?.viewControllers?.first as? WelcomeViewController {
+            welcomeVC.username = userTextField.text
+        }
     }
     
     @IBAction func unwind(for segue: UIStoryboardSegue) {

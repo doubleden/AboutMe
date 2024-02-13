@@ -39,7 +39,7 @@
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="Log In "/>
                                                 <connections>
-                                                    <segue destination="PXC-lf-ufx" kind="presentation" modalPresentationStyle="fullScreen" id="KRs-yS-a6f"/>
+                                                    <segue destination="CFy-zV-U3E" kind="presentation" modalPresentationStyle="fullScreen" id="xfe-WC-caZ"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -97,7 +97,7 @@
             </objects>
             <point key="canvasLocation" x="64.885496183206101" y="-2.1126760563380285"/>
         </scene>
-        <!--Welcome View Controller-->
+        <!--Welcome-->
         <scene sceneID="Xl3-4C-7zP">
             <objects>
                 <viewController id="PXC-lf-ufx" customClass="WelcomeViewController" customModule="AboutMe" customModuleProvider="target" sceneMemberID="viewController">
@@ -112,7 +112,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tij-Wq-1kv">
-                                <rect key="frame" x="153.33333333333334" y="740.33333333333337" width="86.666666666666657" height="34.333333333333371"/>
+                                <rect key="frame" x="153.33333333333334" y="695.66666666666663" width="86.666666666666657" height="34.333333333333371"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Log Out">
                                     <fontDescription key="titleFontDescription" style="UICTFontTextStyleHeadline"/>
@@ -139,6 +139,7 @@
                             <constraint firstItem="Tij-Wq-1kv" firstAttribute="centerX" secondItem="7qe-Yy-yMs" secondAttribute="centerX" id="zhk-To-oag"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Welcome" image="house.fill" catalog="system" id="Akp-MZ-n0c"/>
                     <connections>
                         <outlet property="welcomeLabel" destination="WTH-8m-16e" id="ftz-xv-2qR"/>
                     </connections>
@@ -146,10 +147,28 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3QM-QI-GMn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="jfG-Zx-MRm" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="836" y="-2"/>
+            <point key="canvasLocation" x="856" y="734"/>
+        </scene>
+        <!--Tab Bar View Controller-->
+        <scene sceneID="NVz-Ac-CJK">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="CFy-zV-U3E" customClass="TabBarViewController" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Cli-R4-CKt">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="PXC-lf-ufx" kind="relationship" relationship="viewControllers" id="VPq-kZ-8Oo"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dXB-z4-JbR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="855.72519083969462" y="-2.1126760563380285"/>
         </scene>
     </scenes>
     <resources>
+        <image name="house.fill" catalog="system" width="128" height="104"/>
         <image name="lexPic" width="626" height="984"/>
         <image name="person.circle" catalog="system" width="128" height="123"/>
     </resources>
