@@ -9,7 +9,7 @@ import UIKit
 
 final class LoginViewController: UIViewController {
     
-    private let user = User(username: "User", password: "1111")
+    private let user = User.getUser()
     
     @IBOutlet var userTextField: UITextField!
     @IBOutlet var passwordTextField: UITextField!
@@ -38,8 +38,23 @@ final class LoginViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let tabBarVC = segue.destination as? UITabBarController
-        if let welcomeVC = tabBarVC?.viewControllers?.first as? WelcomeViewController {
-            welcomeVC.username = userTextField.text
+        
+        tabBarVC?.viewControllers?.forEach { viewController in
+            if let welcomeVC = viewController as? WelcomeViewController {
+                welcomeVC.username = user.username
+                welcomeVC.person = user.person.name
+            } else if let navigationVC = viewController as? UINavigationController {
+                if let personVC = navigationVC.topViewController as? PersonViewController {
+                    personVC.name = user.person.name
+                    personVC.surname = user.person.surname
+                    personVC.age = user.person.age
+                    personVC.activity = user.person.activity
+                }
+            } else if let personBiographyVC = viewController as? PersonBiographyViewController {
+                
+            } else if let petVC = viewController as? PetViewController {
+                
+            }
         }
     }
     
