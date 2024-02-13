@@ -17,7 +17,6 @@ final class WelcomeViewController: UIViewController {
     
     override func viewDidLayoutSubviews() {
         makeCircle(for: rectangleView)
-        view.insertSubview(lexusImage, aboveSubview: rectangleView)
         welcomeLabel.text = "Welcome, \(username ?? "") !"
     }
 }

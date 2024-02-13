@@ -74,6 +74,6 @@ final class LoginViewController: UIViewController {
 
 extension UIViewController {
     func makeCircle(for rectangle: UIView) {
-        rectangle.layer.cornerRadius = rectangle.frame.width / 2
+        rectangle.layer.cornerRadius = (rectangle.frame.width) / 2
     }
 }
