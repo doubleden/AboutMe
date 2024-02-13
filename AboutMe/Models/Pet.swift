@@ -6,10 +6,9 @@
 //
 
 struct Pet {
-    let name: String
-    let description: String
+    let characteristic: String
     
     static func getPet() -> Pet {
-        Pet(name: "Lexus", description: "tomorrow")
+        Pet(characteristic: "tomorrow")
     }
 }

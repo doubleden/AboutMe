@@ -43,17 +43,16 @@ final class LoginViewController: UIViewController {
             if let welcomeVC = viewController as? WelcomeViewController {
                 welcomeVC.username = user.username
                 welcomeVC.person = user.person.name
-            } else if let navigationVC = viewController as? UINavigationController {
+            } else if let navigationVC = viewController as? PersonNavigationViewController {
                 if let personVC = navigationVC.topViewController as? PersonViewController {
                     personVC.name = user.person.name
                     personVC.surname = user.person.surname
                     personVC.age = user.person.age
                     personVC.activity = user.person.activity
+                    personVC.biography = user.person.biography
                 }
-            } else if let personBiographyVC = viewController as? PersonBiographyViewController {
-                
             } else if let petVC = viewController as? PetViewController {
-                
+                petVC.characteristic = user.pet.characteristic
             }
         }
     }
@@ -65,7 +64,7 @@ final class LoginViewController: UIViewController {
     
     @IBAction func forgotButtonsAction(_ sender: UIButton) {
         sender.tag == 0
-        ? showAlert(withTitle: "Correct login is User 😉",andMessage: "Try Again!")
+        ? showAlert(withTitle: "Correct login is Alexei 😉",andMessage: "Try Again!")
         : showAlert(withTitle: "Correct password is 1111 🙈",andMessage: "Try Again!")
     }
     

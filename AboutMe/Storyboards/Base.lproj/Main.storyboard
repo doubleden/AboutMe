@@ -21,7 +21,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="cJY-Qm-7C7">
                                         <rect key="frame" x="0.0" y="0.0" width="353" height="142.33333333333334"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="User" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="acC-Sj-SVM">
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Alexei" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="acC-Sj-SVM">
                                                 <rect key="frame" x="0.0" y="0.0" width="353" height="34"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -182,7 +182,7 @@
             </objects>
             <point key="canvasLocation" x="-298.47328244274809" y="741.54929577464793"/>
         </scene>
-        <!--My Bro-->
+        <!--Person View Controller-->
         <scene sceneID="tKF-tF-uYl">
             <objects>
                 <viewController id="Mo9-nw-1sF" customClass="PersonViewController" customModule="AboutMe" customModuleProvider="target" sceneMemberID="viewController">
@@ -283,7 +283,7 @@
                             <constraint firstItem="o70-hD-0Wj" firstAttribute="centerX" secondItem="wwl-a0-Pjh" secondAttribute="centerX" id="js6-Ik-lfm"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="My Bro" id="Ch5-Fl-YXD">
+                    <navigationItem key="navigationItem" id="Ch5-Fl-YXD">
                         <barButtonItem key="rightBarButtonItem" title="More" id="cYY-Se-y6h">
                             <connections>
                                 <segue destination="8pv-TH-Dfp" kind="show" id="6bg-pT-3HH"/>
@@ -306,7 +306,7 @@
         <!--Biography-->
         <scene sceneID="QSU-bK-eel">
             <objects>
-                <viewController id="8pv-TH-Dfp" sceneMemberID="viewController">
+                <viewController id="8pv-TH-Dfp" customClass="PersonBiographyViewController" customModule="AboutMe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dtG-Jb-GRU">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -328,6 +328,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Biography" id="P7R-le-TNh"/>
+                    <connections>
+                        <outlet property="biographyLabel" destination="F53-hc-zNC" id="Shm-aM-YlE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CLU-pb-ogp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -346,7 +349,7 @@
                     <connections>
                         <segue destination="PXC-lf-ufx" kind="relationship" relationship="viewControllers" id="VPq-kZ-8Oo"/>
                         <segue destination="aeo-WI-Lxn" kind="relationship" relationship="viewControllers" id="88K-2d-czT"/>
-                        <segue destination="wcs-YW-vfN" kind="relationship" relationship="viewControllers" id="YXs-jF-z7Q"/>
+                        <segue destination="ybs-74-4Dt" kind="relationship" relationship="viewControllers" id="u1F-gW-Rfx"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dXB-z4-JbR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -362,16 +365,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="realLexus" translatesAutoresizingMaskIntoConstraints="NO" id="frz-jc-XTi">
-                                <rect key="frame" x="67.666666666666657" y="64" width="257.66666666666674" height="340.66666666666669"/>
+                                <rect key="frame" x="67.666666666666657" y="20" width="257.66666666666674" height="340.66666666666669"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="frz-jc-XTi" secondAttribute="height" multiplier="161:213" id="stm-c7-7hp"/>
                                 </constraints>
                             </imageView>
                             <view contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="WpH-Fq-bd6">
-                                <rect key="frame" x="16" y="424.66666666666674" width="361" height="358.33333333333326"/>
+                                <rect key="frame" x="16" y="380.66666666666674" width="361" height="402.33333333333326"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vrK-aA-jBy">
-                                        <rect key="frame" x="16" y="20" width="329" height="318.33333333333331"/>
+                                        <rect key="frame" x="16" y="20" width="329" height="362.33333333333331"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -398,21 +401,23 @@
                             <constraint firstItem="WpH-Fq-bd6" firstAttribute="top" secondItem="frz-jc-XTi" secondAttribute="bottom" constant="20" id="up4-yc-oS4"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Pet" image="dog.fill" catalog="system" id="w8h-TE-Zye"/>
                     <navigationItem key="navigationItem" title="About Me" id="UHG-MM-Ub9"/>
                     <connections>
+                        <outlet property="characteristicLabel" destination="vrK-aA-jBy" id="mR0-rt-rcY"/>
                         <outlet property="realLexusImage" destination="frz-jc-XTi" id="Ba8-jJ-lcP"/>
                         <outlet property="rectangleView" destination="WpH-Fq-bd6" id="QgE-jg-VtV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Oa-tr-Gid" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2962.5954198473282" y="367.6056338028169"/>
+            <point key="canvasLocation" x="2079" y="344"/>
         </scene>
-        <!--Den-->
+        <!--Person-->
         <scene sceneID="6Lb-Nt-4DL">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aeo-WI-Lxn" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Den" image="figure.hockey" catalog="system" id="I5h-To-jQZ"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aeo-WI-Lxn" customClass="PersonNavigationViewController" customModule="AboutMe" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Person" image="figure.hockey" catalog="system" id="I5h-To-jQZ"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="XuE-uM-7zO">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
@@ -431,32 +436,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ayl-q0-uto" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="856" y="1146"/>
-        </scene>
-        <!--Lexus-->
-        <scene sceneID="iNg-Ma-9es">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wcs-YW-vfN" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Lexus" image="dog.fill" catalog="system" id="eiH-Oa-1wy"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9Jf-dX-pz9">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <textAttributes key="titleTextAttributes">
-                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
-                            <color key="textColor" red="0.48235297199999999" green="0.36078432199999999" blue="0.231372565" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        </textAttributes>
-                        <textAttributes key="largeTitleTextAttributes">
-                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
-                        </textAttributes>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="ybs-74-4Dt" kind="relationship" relationship="rootViewController" id="l8g-sp-Oru"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="R28-ah-ohS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2035.8778625954199" y="367.6056338028169"/>
         </scene>
     </scenes>
     <resources>

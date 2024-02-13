@@ -21,6 +21,7 @@ class PersonViewController: UIViewController {
     var surname: String!
     var age: String!
     var activity: String!
+    var biography: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,4 +34,9 @@ class PersonViewController: UIViewController {
         activityLabel.text = activity
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let personBiographyVC = segue.destination as? PersonBiographyViewController {
+            personBiographyVC.biography = biography
+        }
+    }
 }
