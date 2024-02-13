@@ -39,6 +39,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0507520D2B7BAF9D0079BA8D /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				059712F62B7674D300B28A7E /* AppDelegate.swift */,
+				059712F82B7674D300B28A7E /* SceneDelegate.swift */,
+				059713042B7674D400B28A7E /* Info.plist */,
+			);
+			path = Configurations;
+			sourceTree = "<group>";
+		};
+		0507520F2B7BAFCC0079BA8D /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				059712FA2B7674D300B28A7E /* LoginViewController.swift */,
+				0597130A2B768A0100B28A7E /* WelcomeViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		050752112B7BB0130079BA8D /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				059712FC2B7674D300B28A7E /* Main.storyboard */,
+				059713012B7674D400B28A7E /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		050752122B7BB0510079BA8D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		059712EA2B7674D300B28A7E = {
 			isa = PBXGroup;
 			children = (
@@ -58,14 +93,11 @@
 		059712F52B7674D300B28A7E /* AboutMe */ = {
 			isa = PBXGroup;
 			children = (
-				059712F62B7674D300B28A7E /* AppDelegate.swift */,
-				059712F82B7674D300B28A7E /* SceneDelegate.swift */,
-				059712FA2B7674D300B28A7E /* LoginViewController.swift */,
-				0597130A2B768A0100B28A7E /* WelcomeViewController.swift */,
-				059712FC2B7674D300B28A7E /* Main.storyboard */,
+				0507520F2B7BAFCC0079BA8D /* ViewControllers */,
+				050752122B7BB0510079BA8D /* Models */,
+				050752112B7BB0130079BA8D /* Storyboards */,
+				0507520D2B7BAF9D0079BA8D /* Configurations */,
 				059712FF2B7674D400B28A7E /* Assets.xcassets */,
-				059713012B7674D400B28A7E /* LaunchScreen.storyboard */,
-				059713042B7674D400B28A7E /* Info.plist */,
 			);
 			path = AboutMe;
 			sourceTree = "<group>";
@@ -298,7 +330,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = AM64M5A8BU;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = AboutMe/Info.plist;
+				INFOPLIST_FILE = AboutMe/Configurations/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "About Me";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -331,7 +363,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = AM64M5A8BU;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = AboutMe/Info.plist;
+				INFOPLIST_FILE = AboutMe/Configurations/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "About Me";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
