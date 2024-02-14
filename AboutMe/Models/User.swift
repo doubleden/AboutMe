@@ -10,6 +10,7 @@ struct User {
     let username: String
     let password: String
     let welcomeImage: String
+    let descriptionImage: String
     let person: Person
     let pet: Pet
     
@@ -18,6 +19,7 @@ struct User {
             username: "User",
             password: "1111",
             welcomeImage: "lexPic",
+            descriptionImage: "don't be afraid he don't bite )",
             person: Person(
                 name: "Den",
                 surname: "Denisov",

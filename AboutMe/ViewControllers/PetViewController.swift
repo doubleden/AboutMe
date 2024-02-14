@@ -9,19 +9,19 @@ import UIKit
 
 final class PetViewController: UIViewController {
 
-    @IBOutlet var petImage: UIImageView!
     @IBOutlet var rectangleView: UIView!
+    @IBOutlet var mainImage: UIImageView!
     @IBOutlet var characteristicLabel: UILabel!
     
+    var picture: String!
     var characteristic: String!
-    var photo: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        petImage.layer.cornerRadius = 15
+        mainImage.layer.cornerRadius = 15
         rectangleView.layer.cornerRadius = 15
         
-        petImage.image = UIImage(named: photo)
+        mainImage.image = UIImage(named: picture)
         characteristicLabel.text = characteristic
     }
 }

@@ -9,15 +9,15 @@ import UIKit
 
 final class PersonViewController: UIViewController {
     
-    @IBOutlet var personImage: UIImageView!
     @IBOutlet var rectangleView: UIView!
+    @IBOutlet var mainImage: UIImageView!
     
     @IBOutlet var nameLabel: UILabel!
     @IBOutlet var surnameLabel: UILabel!
     @IBOutlet var ageLabel: UILabel!
     @IBOutlet var activityLabel: UILabel!
     
-    var photo: String!
+    var picture: String!
     var name: String!
     var surname: String!
     var age: String!
@@ -27,13 +27,13 @@ final class PersonViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        personImage.layer.cornerRadius = 15
+        mainImage.layer.cornerRadius = 15
         rectangleView.layer.cornerRadius = 15
         
         nameLabel.text = name
         surnameLabel.text = surname
         ageLabel.text = age
-        personImage.image = UIImage(named: photo)
+        mainImage.image = UIImage(named: picture)
         activityLabel.text = activity
     }
     

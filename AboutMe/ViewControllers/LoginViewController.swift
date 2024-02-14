@@ -44,17 +44,18 @@ final class LoginViewController: UIViewController {
                 welcomeVC.username = user.username
                 welcomeVC.person = user.person.name
                 welcomeVC.photo = user.welcomeImage
+                welcomeVC.descriptionImage = user.descriptionImage
             } else if let navigationVC = viewController as? PersonNavigationViewController {
                 if let personVC = navigationVC.topViewController as? PersonViewController {
                     personVC.name = user.person.name
                     personVC.surname = user.person.surname
                     personVC.age = user.person.age
-                    personVC.photo = user.person.photo
+                    personVC.picture = user.person.photo
                     personVC.activity = user.person.activity
                     personVC.biography = user.person.biography
                 }
             } else if let petVC = viewController as? PetViewController {
-                petVC.photo = user.pet.photo
+                petVC.picture = user.pet.photo
                 petVC.characteristic = user.pet.characteristic
             }
         }
