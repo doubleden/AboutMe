@@ -40,12 +40,13 @@ final class LoginViewController: UIViewController {
         let tabBarVC = segue.destination as? UITabBarController
         
         tabBarVC?.viewControllers?.forEach { viewController in
-            if let welcomeVC = viewController as? WelcomeViewController {
+            switch viewController {
+            case let welcomeVC as WelcomeViewController:
                 welcomeVC.username = user.username
-                welcomeVC.person = user.person.name
+                welcomeVC.personName = user.person.name
                 welcomeVC.photo = user.welcomeImage
                 welcomeVC.descriptionImage = user.descriptionImage
-            } else if let navigationVC = viewController as? PersonNavigationViewController {
+            case let navigationVC as UINavigationController:
                 if let personVC = navigationVC.topViewController as? PersonViewController {
                     personVC.name = user.person.name
                     personVC.surname = user.person.surname
@@ -54,9 +55,11 @@ final class LoginViewController: UIViewController {
                     personVC.activity = user.person.activity
                     personVC.biography = user.person.biography
                 }
-            } else if let petVC = viewController as? PetViewController {
+            case let petVC as PetViewController:
                 petVC.picture = user.pet.photo
                 petVC.characteristic = user.pet.characteristic
+            default:
+                break
             }
         }
     }
@@ -68,7 +71,7 @@ final class LoginViewController: UIViewController {
     
     @IBAction func forgotButtonsAction(_ sender: UIButton) {
         sender.tag == 0
-        ? showAlert(withTitle: "Correct login is Alexei 😉",andMessage: "Try Again!")
+        ? showAlert(withTitle: "Correct login is User 😉",andMessage: "Try Again!")
         : showAlert(withTitle: "Correct password is 1111 🙈",andMessage: "Try Again!")
     }
     
@@ -87,11 +90,5 @@ final class LoginViewController: UIViewController {
         
         alert.addAction(okButton)
         present(alert, animated: true)
-    }
-}
-
-extension UIViewController {
-    func makeCircle(for rectangle: UIView) {
-        rectangle.layer.cornerRadius = (rectangle.frame.width) / 2
     }
 }

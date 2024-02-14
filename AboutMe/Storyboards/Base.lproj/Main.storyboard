@@ -338,10 +338,10 @@
             </objects>
             <point key="canvasLocation" x="2624" y="1146"/>
         </scene>
-        <!--Tab Bar View Controller-->
+        <!--Tab Bar Controller-->
         <scene sceneID="NVz-Ac-CJK">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="CFy-zV-U3E" customClass="TabBarViewController" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="CFy-zV-U3E" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Cli-R4-CKt">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
@@ -419,7 +419,7 @@
         <!--Person-->
         <scene sceneID="6Lb-Nt-4DL">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aeo-WI-Lxn" customClass="PersonNavigationViewController" customModule="AboutMe" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aeo-WI-Lxn" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Person" image="figure.hockey" catalog="system" id="I5h-To-jQZ"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="XuE-uM-7zO">

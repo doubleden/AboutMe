@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		050752142B7BB4130079BA8D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050752132B7BB4130079BA8D /* User.swift */; };
-		050752182B7BB8810079BA8D /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050752172B7BB8810079BA8D /* TabBarViewController.swift */; };
 		0507521A2B7BC4790079BA8D /* PersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050752192B7BC4790079BA8D /* PersonViewController.swift */; };
 		0507521C2B7BCBFB0079BA8D /* PetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0507521B2B7BCBFB0079BA8D /* PetViewController.swift */; };
 		0507521E2B7C062A0079BA8D /* PersonBiographyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0507521D2B7C062A0079BA8D /* PersonBiographyViewController.swift */; };
@@ -24,7 +23,6 @@
 
 /* Begin PBXFileReference section */
 		050752132B7BB4130079BA8D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		050752172B7BB8810079BA8D /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		050752192B7BC4790079BA8D /* PersonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonViewController.swift; sourceTree = "<group>"; };
 		0507521B2B7BCBFB0079BA8D /* PetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetViewController.swift; sourceTree = "<group>"; };
 		0507521D2B7C062A0079BA8D /* PersonBiographyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonBiographyViewController.swift; sourceTree = "<group>"; };
@@ -65,7 +63,6 @@
 			isa = PBXGroup;
 			children = (
 				059712FA2B7674D300B28A7E /* LoginViewController.swift */,
-				050752172B7BB8810079BA8D /* TabBarViewController.swift */,
 				0597130A2B768A0100B28A7E /* WelcomeViewController.swift */,
 				050752192B7BC4790079BA8D /* PersonViewController.swift */,
 				0507521D2B7C062A0079BA8D /* PersonBiographyViewController.swift */,
@@ -197,7 +194,6 @@
 				0507521E2B7C062A0079BA8D /* PersonBiographyViewController.swift in Sources */,
 				0507521A2B7BC4790079BA8D /* PersonViewController.swift in Sources */,
 				059712F72B7674D300B28A7E /* AppDelegate.swift in Sources */,
-				050752182B7BB8810079BA8D /* TabBarViewController.swift in Sources */,
 				050752142B7BB4130079BA8D /* User.swift in Sources */,
 				059712F92B7674D300B28A7E /* SceneDelegate.swift in Sources */,
 				0507521C2B7BCBFB0079BA8D /* PetViewController.swift in Sources */,
