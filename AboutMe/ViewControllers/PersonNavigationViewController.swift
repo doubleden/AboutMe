@@ -7,5 +7,5 @@
 
 import UIKit
 
-class PersonNavigationViewController: UINavigationController {
+final class PersonNavigationViewController: UINavigationController {
 }

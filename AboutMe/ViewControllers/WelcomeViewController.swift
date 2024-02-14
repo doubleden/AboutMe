@@ -13,15 +13,16 @@ final class WelcomeViewController: UIViewController {
     @IBOutlet var greetingLabel: UILabel!
     
     @IBOutlet var rectangleView: UIView!
-    @IBOutlet var lexusImage: UIImageView!
+    @IBOutlet var welcomeImage: UIImageView!
     
     var username: String!
-    
-    var person = ""
+    var person: String!
+    var photo: String!
     
     override func viewDidLayoutSubviews() {
         makeCircle(for: rectangleView)
         welcomeLabel.text = "Welcome, \(username ?? "") !"
-        greetingLabel.text = "Hi my name is \(person)!"
+        greetingLabel.text = "Hi my name is \(person ?? "")!"
+        welcomeImage.image = UIImage(named: photo)
     }
 }

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class PersonBiographyViewController: UIViewController {
+final class PersonBiographyViewController: UIViewController {
 
     @IBOutlet var biographyLabel: UILabel!
     

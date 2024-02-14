@@ -7,9 +7,9 @@
 
 import UIKit
 
-class PersonViewController: UIViewController {
+final class PersonViewController: UIViewController {
     
-    @IBOutlet var denImage: UIImageView!
+    @IBOutlet var personImage: UIImageView!
     @IBOutlet var rectangleView: UIView!
     
     @IBOutlet var nameLabel: UILabel!
@@ -17,20 +17,23 @@ class PersonViewController: UIViewController {
     @IBOutlet var ageLabel: UILabel!
     @IBOutlet var activityLabel: UILabel!
     
+    var photo: String!
     var name: String!
     var surname: String!
     var age: String!
+    
     var activity: String!
     var biography: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        denImage.layer.cornerRadius = 15
+        personImage.layer.cornerRadius = 15
         rectangleView.layer.cornerRadius = 15
         
         nameLabel.text = name
         surnameLabel.text = surname
         ageLabel.text = age
+        personImage.image = UIImage(named: photo)
         activityLabel.text = activity
     }
     

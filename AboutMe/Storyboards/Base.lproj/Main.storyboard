@@ -21,7 +21,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="cJY-Qm-7C7">
                                         <rect key="frame" x="0.0" y="0.0" width="353" height="142.33333333333334"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Alexei" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="acC-Sj-SVM">
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="User" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="acC-Sj-SVM">
                                                 <rect key="frame" x="0.0" y="0.0" width="353" height="34"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -127,7 +127,7 @@
                             <view contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="ATk-Kr-P8M">
                                 <rect key="frame" x="87" y="316.66666666666669" width="219" height="218.66666666666669"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lexPic" translatesAutoresizingMaskIntoConstraints="NO" id="Hwj-PP-pnE">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hwj-PP-pnE">
                                         <rect key="frame" x="29" y="28" width="161" height="162"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                     </imageView>
@@ -172,8 +172,8 @@
                     <tabBarItem key="tabBarItem" title="Welcome" image="house.fill" catalog="system" id="Akp-MZ-n0c"/>
                     <connections>
                         <outlet property="greetingLabel" destination="09O-Ih-POH" id="yTA-9U-dB8"/>
-                        <outlet property="lexusImage" destination="Hwj-PP-pnE" id="TN1-Y7-IZI"/>
                         <outlet property="rectangleView" destination="ATk-Kr-P8M" id="ytR-B4-gLQ"/>
+                        <outlet property="welcomeImage" destination="Hwj-PP-pnE" id="TN1-Y7-IZI"/>
                         <outlet property="welcomeLabel" destination="WTH-8m-16e" id="ftz-xv-2qR"/>
                     </connections>
                 </viewController>
@@ -190,7 +190,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="den" translatesAutoresizingMaskIntoConstraints="NO" id="o70-hD-0Wj">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="o70-hD-0Wj">
                                 <rect key="frame" x="73" y="64" width="247" height="306.33333333333331"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="o70-hD-0Wj" secondAttribute="height" multiplier="130:161" id="GB0-4s-DUE"/>
@@ -293,8 +293,8 @@
                     <connections>
                         <outlet property="activityLabel" destination="kB2-rg-LLw" id="MfH-Wc-l08"/>
                         <outlet property="ageLabel" destination="90o-3x-gkL" id="m6k-vX-bDH"/>
-                        <outlet property="denImage" destination="o70-hD-0Wj" id="JmB-XO-SiD"/>
                         <outlet property="nameLabel" destination="gLV-ga-978" id="QWX-kv-3iG"/>
+                        <outlet property="personImage" destination="o70-hD-0Wj" id="JmB-XO-SiD"/>
                         <outlet property="rectangleView" destination="lpR-tt-Wlu" id="6qX-AP-zi7"/>
                         <outlet property="surnameLabel" destination="IiB-o8-lqv" id="hCM-Os-G6L"/>
                     </connections>
@@ -311,7 +311,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F53-hc-zNC">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F53-hc-zNC">
                                 <rect key="frame" x="16" y="64" width="361" height="719"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                 <nil key="textColor"/>
@@ -342,6 +342,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="CFy-zV-U3E" customClass="TabBarViewController" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Cli-R4-CKt">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="selectedImageTintColor" red="0.56470588235294117" green="0.38823529411764707" blue="0.23137254901960785" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -364,16 +365,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="realLexus" translatesAutoresizingMaskIntoConstraints="NO" id="frz-jc-XTi">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="frz-jc-XTi">
                                 <rect key="frame" x="67.666666666666657" y="20" width="257.66666666666674" height="340.66666666666669"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="frz-jc-XTi" secondAttribute="height" multiplier="161:213" id="stm-c7-7hp"/>
                                 </constraints>
                             </imageView>
-                            <view contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="WpH-Fq-bd6">
+                            <view contentMode="top" translatesAutoresizingMaskIntoConstraints="NO" id="WpH-Fq-bd6">
                                 <rect key="frame" x="16" y="380.66666666666674" width="361" height="402.33333333333326"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vrK-aA-jBy">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vrK-aA-jBy">
                                         <rect key="frame" x="16" y="20" width="329" height="362.33333333333331"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -405,7 +406,7 @@
                     <navigationItem key="navigationItem" title="About Me" id="UHG-MM-Ub9"/>
                     <connections>
                         <outlet property="characteristicLabel" destination="vrK-aA-jBy" id="mR0-rt-rcY"/>
-                        <outlet property="realLexusImage" destination="frz-jc-XTi" id="Ba8-jJ-lcP"/>
+                        <outlet property="petImage" destination="frz-jc-XTi" id="Ba8-jJ-lcP"/>
                         <outlet property="rectangleView" destination="WpH-Fq-bd6" id="QgE-jg-VtV"/>
                     </connections>
                 </viewController>
@@ -439,12 +440,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="den" width="607" height="750"/>
         <image name="dog.fill" catalog="system" width="128" height="100"/>
         <image name="figure.hockey" catalog="system" width="128" height="90"/>
         <image name="house.fill" catalog="system" width="128" height="104"/>
-        <image name="lexPic" width="626" height="984"/>
         <image name="person.circle" catalog="system" width="128" height="123"/>
-        <image name="realLexus" width="3024" height="4032"/>
     </resources>
 </document>

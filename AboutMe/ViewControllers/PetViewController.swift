@@ -7,21 +7,21 @@
 
 import UIKit
 
-class PetViewController: UIViewController {
+final class PetViewController: UIViewController {
 
-    
-    @IBOutlet var realLexusImage: UIImageView!
+    @IBOutlet var petImage: UIImageView!
     @IBOutlet var rectangleView: UIView!
     @IBOutlet var characteristicLabel: UILabel!
     
     var characteristic: String!
+    var photo: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        realLexusImage.layer.cornerRadius = 15
+        petImage.layer.cornerRadius = 15
         rectangleView.layer.cornerRadius = 15
         
-        
+        petImage.image = UIImage(named: photo)
         characteristicLabel.text = characteristic
     }
 }
