@@ -16,18 +16,15 @@ final class WelcomeViewController: UIViewController {
     @IBOutlet var mainImage: UIImageView!
     @IBOutlet var descriptionImageLabel: UILabel!
     
-    var username: String!
-    var personName: String!
-    var photo: String!
-    var descriptionImage: String!
+    var user: User!
     
     override func viewDidLayoutSubviews() {
         rectangleView.layer.cornerRadius = (rectangleView.frame.width) / 2
         
-        welcomeLabel.text = "Welcome, \(username ?? "") !"
-        greetingLabel.text = "Hi my name is \(personName ?? "")!"
+        welcomeLabel.text = "Welcome, \(user.username) !"
+        greetingLabel.text = "Hi my name is \(user.person.name)!"
         
-        mainImage.image = UIImage(named: photo)
-        descriptionImageLabel.text = descriptionImage
+        mainImage.image = UIImage(named: user.person.welcomeImage)
+        descriptionImageLabel.text = user.person.descriptionWelcomeImage
     }
 }

@@ -9,10 +9,10 @@ import UIKit
 
 final class LoginViewController: UIViewController {
     
-    private let user = User.getUser()
-    
     @IBOutlet var userTextField: UITextField!
     @IBOutlet var passwordTextField: UITextField!
+    
+    private let user = User.getUser()
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super .touchesBegan(touches, with: event)
@@ -42,22 +42,13 @@ final class LoginViewController: UIViewController {
         tabBarVC?.viewControllers?.forEach { viewController in
             switch viewController {
             case let welcomeVC as WelcomeViewController:
-                welcomeVC.username = user.username
-                welcomeVC.personName = user.person.name
-                welcomeVC.photo = user.welcomeImage
-                welcomeVC.descriptionImage = user.descriptionImage
+                welcomeVC.user = user
             case let navigationVC as UINavigationController:
                 if let personVC = navigationVC.topViewController as? PersonViewController {
-                    personVC.name = user.person.name
-                    personVC.surname = user.person.surname
-                    personVC.age = user.person.age
-                    personVC.picture = user.person.photo
-                    personVC.activity = user.person.activity
-                    personVC.biography = user.person.biography
+                    personVC.user = user
                 }
             case let petVC as PetViewController:
-                petVC.picture = user.pet.photo
-                petVC.characteristic = user.pet.characteristic
+                petVC.user = user
             default:
                 break
             }

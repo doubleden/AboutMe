@@ -17,29 +17,23 @@ final class PersonViewController: UIViewController {
     @IBOutlet var ageLabel: UILabel!
     @IBOutlet var activityLabel: UILabel!
     
-    var picture: String!
-    var name: String!
-    var surname: String!
-    var age: String!
-    
-    var activity: String!
-    var biography: String!
+    var user: User!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         mainImage.layer.cornerRadius = 15
         rectangleView.layer.cornerRadius = 15
         
-        nameLabel.text = name
-        surnameLabel.text = surname
-        ageLabel.text = age
-        mainImage.image = UIImage(named: picture)
-        activityLabel.text = activity
+        nameLabel.text = user.person.name
+        surnameLabel.text = user.person.surname
+        ageLabel.text = user.person.age
+        mainImage.image = UIImage(named: user.person.photo)
+        activityLabel.text = user.person.activity
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let personBiographyVC = segue.destination as? PersonBiographyViewController {
-            personBiographyVC.biography = biography
+            personBiographyVC.biography = user.person.biography
         }
     }
 }

@@ -13,15 +13,14 @@ final class PetViewController: UIViewController {
     @IBOutlet var mainImage: UIImageView!
     @IBOutlet var characteristicLabel: UILabel!
     
-    var picture: String!
-    var characteristic: String!
+    var user: User!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         mainImage.layer.cornerRadius = 15
         rectangleView.layer.cornerRadius = 15
         
-        mainImage.image = UIImage(named: picture)
-        characteristicLabel.text = characteristic
+        mainImage.image = UIImage(named: user.person.pet.photo)
+        characteristicLabel.text = user.person.pet.characteristic
     }
 }
