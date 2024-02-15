@@ -61,9 +61,11 @@ final class LoginViewController: UIViewController {
     }
     
     @IBAction func forgotButtonsAction(_ sender: UIButton) {
-        sender.tag == 0
-        ? showAlert(withTitle: "Correct login is User 😉",andMessage: "Try Again!")
-        : showAlert(withTitle: "Correct password is 1111 🙈",andMessage: "Try Again!")
+        showAlert(
+            withTitle: sender.tag == 0 
+            ? "Correct login is User 😉" : "Correct password is 1111 🙈",
+            andMessage: "Try Again!"
+        )
     }
     
     private func showAlert(
